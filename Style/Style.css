@@ -117,17 +117,31 @@ body
     margin-top: 100px;
 }
 
+@media (max-width:764px)
+{
+    .nav{
+        display: none;
+    }
+    .header
+    {
+        display: flex;
+        justify-content: center;
+    }
+}
+
 
 /* footer */
 
 .main-container {
     flex: 1; 
+    
 }
 
 .footer {
     position: relative;
     width: 100%;
     color: white;
+    border-radius: 10px 10px 0 0;
 }
 
 .footer {
