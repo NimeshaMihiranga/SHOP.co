@@ -1,0 +1,146 @@
+body
+{
+    font-family: "Ansani-Oralia";
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.maincontent
+{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.name
+{
+    color: #000;
+    font-size: 20px;
+}
+.header a
+{
+    text-decoration: none;
+    
+}
+.head
+{
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    box-shadow: 0px 0px 10px black;
+}
+.navigation-bar
+{
+     padding: 10px;
+     position: relative;
+     background-color: rgba(170, 170, 170, 0.336);
+     backdrop-filter: blur(5px);
+     
+     
+     z-index: 1;
+
+}
+.header 
+{
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    max-width: 90%;
+    margin: auto;
+    
+}
+
+.header-navi > ul
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.navilist
+{
+    position: relative;
+    margin-right: 30px;
+    padding: 10px 20px;
+    border-radius: 0 0 10px 0px;
+    color: rgb(0, 0, 0);
+    
+
+}
+
+.navilist::after
+{
+
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    background-color: rgb(255, 0, 0);
+    border-radius: 0 0 10px 0px;
+    width: 0;
+    transition: .5s ease;
+    box-shadow: 0px 0px 0px black;
+    
+    
+    
+}
+
+.navilist:hover::after
+{
+    z-index: -1;
+    width: 100%;
+    box-shadow: 0px 0px 5px black;
+    
+}
+
+.drop
+{
+    list-style: none;
+}
+
+.navilistdrop
+{
+    display: none;
+}
+
+.conntent
+{
+    margin-top: 100px;
+}
+
+
+/* footer */
+
+.main-container {
+    flex: 1; 
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    color: white;
+}
+
+.footer {
+    background-color: blue;
+}
+.copy
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.aling
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}
