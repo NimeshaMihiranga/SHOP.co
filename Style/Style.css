@@ -9,16 +9,19 @@ body
     flex-direction: column;
     min-height: 100vh;
 }
+
+.logo
+{
+    width: 80px;
+      
+}
+
 .maincontent
 {
     margin-left: 20px;
     margin-right: 20px;
 }
-.name
-{
-    color: #000;
-    font-size: 20px;
-}
+
 .header a
 {
     text-decoration: none;
@@ -38,8 +41,6 @@ body
      position: relative;
      background-color: rgba(170, 170, 170, 0.336);
      backdrop-filter: blur(5px);
-     
-     
      z-index: 1;
 
 }
@@ -87,9 +88,8 @@ body
     background-color: rgb(255, 0, 0);
     border-radius: 0 0 10px 0px;
     width: 0;
+    opacity: .1;
     transition: .5s ease;
-    box-shadow: 0px 0px 0px black;
-    
     
     
 }
@@ -98,7 +98,8 @@ body
 {
     z-index: -1;
     width: 100%;
-    box-shadow: 0px 0px 5px black;
+    opacity: 1;
+    box-shadow: 0px 0px 2px black;
     
 }
 
@@ -146,15 +147,130 @@ body
 
 .footer {
     background-color: blue;
+    
 }
 .copy
 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: "Caveat", cursive;
+    font-weight: 400;
+    opacity: .5;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 .aling
 {
     margin-left: 10px;
     margin-right: 10px;
+    
+    
+}
+.aling .name
+{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+hr
+{
+    opacity: .4;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.fimg1
+{
+    display: block;
+    position: absolute;
+    width: 100px;
+    margin-top: 50px;
+    height: 30px;
+    filter: brightness(0) invert(1);
+    margin-left: 50px;
+    border-radius: 5px;
+}
+
+@media (max-width:764px)
+{
+    .fimg1
+    {
+        display: none;
+    }
+}
+
+
+.fimg
+{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    margin-top: 50px;
+    margin-left: 50px;
+    height: 30px;
+    filter: brightness(0) invert(1);
+    border-radius: 5px;
+}
+
+
+
+.shotcut
+{
+    display: flex;
+    justify-content: right;
+    margin-right: 80px;
+    position: relative;
+    margin-top: 0px;
+}
+
+.social
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.social-item
+{
+    display: flex;
+    align-items: center;
+    font-width: 100px;
+    gap: 10px;
+}
+.f-section
+{
+    display: flex;
+    justify-content: left;
+}
+
+.social-item span
+{
+    font-weight: 100;
+}
+.social-mobile
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 100;
+    opacity: .8;
+    margin-left: 50px;
+}
+
+.short-mobile
+{
+    display: flex;
+    flex-direction: column;
+    justify-self: right;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 100;
+    opacity: .8;
+    margin-right: 50px; 
+    text-align: right;
+    align-items: flex-end;
 }
